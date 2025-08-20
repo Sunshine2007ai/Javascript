@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var a = [17, 27, 38, 49, 60, 61, 86, 85, 92, 10];
+        console.log("Original Array:");
+        console.log(a);
+        var b = 0;
+        for (var i = 1 ; i < a.length; i++) {
+            if(i % 2 != 0){
+                  b = b + a[i];
+            }
+        }
+        console.log("Addition of array :");
+            console.log("addition is :", b);
+    </script>
+</body>
+
+</html>

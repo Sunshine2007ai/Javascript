@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Duplicate Value</title>
+</head>
+<body>
+    
+    <script>
+        var a =[2,4,6,8,9,3,4,1];
+        var x = duplicateValue(a);
+        function duplicateValue(array){
+            for(var i=0;i<=array.length-1;i++){
+                for(var j=i+1 ; j<= array.length-1; j++){
+                    if(array[i] === array[j]){
+                        return array[i];
+                    }
+                }
+            }
+        }
+        console.log(x);
+    </script>
+</body>
+</html>

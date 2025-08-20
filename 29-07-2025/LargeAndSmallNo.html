@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        var a = [54, 95, 61, 21, 67, 90];
+        var large = a[0];
+        var small = a[0];
+        console.log("Original Array :");
+        console.log(a);
+        for (i = 0; i <= a.length - 1; i++) {
+            if (large < a[i]) {
+                large = a[i];
+            }
+            if (small > a[i]) {
+                small = a[i];
+            }
+        }
+        console.log("Large Number :", large);
+        console.log("Small Number :", small);
+    </script>
+</body>
+
+</html>

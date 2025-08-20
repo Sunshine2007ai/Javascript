@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Select Color </h1>
+    <select name="color" id="color" onchange="DisplayColor()">
+        <option value="Red" selected>Red</option>
+        <option value="Blue">Blue</option>
+        <option value="Green">Green</option>
+    </select>
+    <p id="print"></p>
+    <script>
+        var color=document.getElementById("color").value;
+        function DisplayColor(){
+            document.getElementById("print").innerText = "You Selected :"+color;
+        }
+    </script>
+</body>
+</html>
